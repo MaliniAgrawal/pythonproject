@@ -39,3 +39,17 @@ def string_match(a, b):
             count = count + 1
 
     return count
+
+#  code for ingnoring num in list
+def sum_78(nums):
+    sum = 0
+    ignore_section = False
+    for num in nums:
+        if num == 7:
+            ignore_section = True
+        elif num == 8 and ignore_section:
+            ignore_section = False
+        elif not ignore_section:
+            sum += num
+    return sum
+
