@@ -53,3 +53,23 @@ def sum_78(nums):
             sum += num
     return sum
 
+# introduction for Class
+class vehicle:
+    color = "orange"
+    def __init__(self, body_type, maker):
+
+        self.v_body = body_type
+        self.v_maker = maker
+
+car1 = vehicle("jeep", "toyota")
+car1.color = "red"
+
+car2 = vehicle("sedan", "honda")
+car3 = vehicle("truck", "mercedes")
+car4 = vehicle("pickup", "audi")
+car5 = vehicle("rv", "lexus")
+print(car1.v_maker, car1.v_body,car1.color,)
+print(car2.v_maker, car2.v_body,car2.color,)
+print(car3.v_maker, car3.v_body,car3.color)
+print(car4.v_maker, car4.v_body, car4.color)
+print(car5.v_maker, car5.v_body,car5.color)
